@@ -1,0 +1,109 @@
+/*Cores Gerais*/
+
+:root {
+    --cor-azul: #4a90e2;
+    --cor-amarelo: #f39c12;
+    --cor-fundo: #f4f7f6;
+    --cor-preto: #333;
+    --cor-branco: #ffffff;
+}
+
+/*Corpo*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-preto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Cabeçalho*/
+header h1 {
+    color: var(--cor-azul);
+    border-bottom: 3px solid var(--cor-azul);
+    padding-bottom: 10px;
+}
+
+h2, h3 {
+    color: #555;
+    margin-top: 25px;
+}
+
+/*Inputs e Botões*/
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: var(--cor-azul);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--cor-azul);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+button#btnFiltrarCincoMelhores {
+    background-color: var(--cor-amarelo);
+    margin: 15px auto;
+}
+
+/*Barra Rolante na Lista*/
+
+#listaAlunos, #listaAlunosMelhores {
+    background-color: var(--cor-branco);
+    border-left: 5px solid var(--cor-azul);
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
+    
+    
+    max-height: 200px; 
+    overflow-y: auto;
+    
+    
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    white-space: pre-line;
+}
+
+#listaAlunos::-webkit-scrollbar, 
+#listaAlunosMelhores::-webkit-scrollbar {
+    width: 8px;
+}
+
+#listaAlunos::-webkit-scrollbar-thumb, 
+#listaAlunosMelhores::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+#listaAlunos::-webkit-scrollbar-thumb:hover, 
+#listaAlunosMelhores::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-azul);
+}
+
+/*Rodapé*/
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #888;
+}
