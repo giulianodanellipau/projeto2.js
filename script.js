@@ -43,14 +43,14 @@ function cadastrarAluno() {
         situacao: situacao
     }
 
+    //Array para alunos nota 10
+    if (aluno.media === 10){
+        alunosMelhores.push(aluno);
+    }
+
     alunos.push(aluno);
     limparCampos();
     exibirAlunos(alunos);
-
-    //Array para alunos nota 10
-    if (aluno.media == 10){
-        alunosMelhores.push(aluno);
-    }
 
 }
 
